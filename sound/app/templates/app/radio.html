@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+
+
+
+{% block content %}
+
+<h3>اذاعات القران الكريم</h3>
+{% for radio in radios %}
+<div class="sora">
+    <h5  style="color: brown;" ><a href="{% url 'radioplay' radio.id %}">{{radio.title}}</a></h5>
+</div>
+
+
+
+
+{% endfor %}
+
+{% endblock content %}

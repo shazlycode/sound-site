@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+
+
+
+{% block content %}
+
+<h3>عبد الباسط عبد الصمد</h3>
+{% for sound in sounds %}
+<div class="sora">
+    <h5  style="color: brown;" ><a href="{% url 'basetplay' sound.id %}">{{sound.title}}</a></h5>
+</div>
+
+
+
+
+{% endfor %}
+
+{% endblock content %}

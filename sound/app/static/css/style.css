@@ -1,0 +1,25 @@
+
+html,head,body{
+    direction: rtl;
+    text-align: right;
+}
+
+body{
+    background-color: rgb(233, 198, 110);
+}
+.card-group{
+    margin: 2;
+    padding: 2;
+}
+.card-title{
+    background-color: burlywood;
+    color: brown;
+}
+.card{
+    margin: 6;
+}
+.sora{
+    text-align: center;
+    color: darkred;
+
+}

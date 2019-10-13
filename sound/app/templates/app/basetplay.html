@@ -1,0 +1,26 @@
+{% extends 'app/base.html' %}
+
+
+
+{% block content %}
+<div class="card-group">
+    <div class="card">
+        <div class="card-title">
+            <h4 class="text-center">
+           سورة {{track.title}}- {{track.player}}
+        </h4>
+        </div>
+        <div class="card body">
+            <audio controls='controls'>
+                <!-- <source src="{{track.source.url}}"> -->
+                <source src="{{track.path}}">
+            </audio>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}

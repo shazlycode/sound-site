@@ -1,0 +1,16 @@
+{% load static %}
+{% for sound in sounds %}
+<h5>{{sound.title}}</h5>
+<audio controls="controls">
+    Your browser does not support the &lt;audio&gt; tag. 
+    <source src="{{sound.source.url}}" type="audio/mp3"/>
+  </audio> 
+
+  {% endfor %}
+
+  http://live.mp3quran.net:8006/
+
+  <audio controls="controls">
+    Your browser does not support the &lt;audio&gt; tag. 
+    <source src="http://live.mp3quran.net:8008/;" type="audio/mp3"/>
+  </audio> 
