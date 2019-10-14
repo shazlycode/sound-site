@@ -26,3 +26,11 @@ class Menshawy(models.Model):
     
     def __str__(self):
         return self.title
+    
+class Husary(models.Model):
+    player=models.CharField(max_length=100, default='محمود خليل الحصري')
+    title= models.CharField(max_length=100)
+    path= models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.title

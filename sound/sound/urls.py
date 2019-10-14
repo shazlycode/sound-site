@@ -26,6 +26,10 @@ urlpatterns = [
     path('radio', views.radioview, name='radio'),
     path('basetplay/<int:sound_id>', views.baset_play, name='basetplay'),
     path('radioplay/<int:radio_id>', views.radio_play, name='radioplay'),
+    path('minshawy', views.minshview, name='minshawy'),
+    path('minshawyplay/<int:sound_id>', views.minshawy_play, name='minshawyplay'),
+    path('husary', views.husaryview, name='husary'),
+    path('husaryplay/<int:sound_id>', views.husary_play, name='husaryplay'),
     
     
     
