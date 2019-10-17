@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Baset, Radio, Menshawy,Husary
+from .models import Baset, Radio, Menshawy, Husary, Bana
 # Create your views here.
 
 def index(request):
@@ -78,3 +78,20 @@ def husary_play(request, sound_id):
         'track': track,
     }
     return render(request,'app/husaryplay.html', context)
+
+def banaview(request):
+    sounds= Bana.objects.all()
+    context={
+        'title':'محمود علي البنا',
+        'sounds':sounds,
+        
+    }
+    return render(request, 'app/bana.html', context)
+
+def bana_play(request, sound_id):
+    track= get_object_or_404(Bana, pk=sound_id)
+    context={
+        'title':'تشغيل محمود علي البنا',
+        'track': track,
+    }
+    return render(request,'app/banaplay.html', context)

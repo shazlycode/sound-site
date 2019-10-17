@@ -34,3 +34,11 @@ class Husary(models.Model):
     
     def __str__(self):
         return self.title
+    
+class Bana(models.Model):
+    player=models.CharField(max_length=100, default='محمود علي البنا')
+    title= models.CharField(max_length=100)
+    path= models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.title
